@@ -93,15 +93,17 @@ a:active {
   background-color: var(--color-black);
 }
 
-/* Task 23: Fix issues for dark theme */
+/* 1. Style the footer-address class: color to text-color property */
 .footer-address {
   color: var(--text-color);
 }
 
+/* 2. Style the social-link class as a block element */
 .social-link {
   display: block;
 }
 
+/* 3. Style the social-link class that also selects the svg children: fill with text-color variable */
 .social-link svg {
   fill: var(--text-color);
 }
