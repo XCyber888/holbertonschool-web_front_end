@@ -29,7 +29,7 @@
     --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
-    --nav-item-link-hover: var(--color-white);
+    --nav-item-link-hover: var(--color-primary);
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
     --button-border: 0.2rem solid var(--color-primary);
@@ -126,26 +126,10 @@ nav .nav-item {
 nav .nav-link {
     display: block;
     padding: 0.5rem 1rem;
-    position: relative;
 }
 
 nav .nav-link:hover {
     color: var(--nav-item-link-hover);
-}
-
-nav .nav-link::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--color-white);
-    width: 0;
-    height: 20%;
-}
-
-nav .nav-item:hover .nav-link::before {
-    background-color: var(--color-primary);
-    width: 100%;
 }
 
 ul.row {
@@ -264,4 +248,24 @@ footer ul {
     position: var(--header-logo-link-position);
     top: var(--header-logo-link-top);
     left: var(--header-logo-link-left);
+}
+
+/* Task 29: Styling and custom properties for the nav */
+:root {
+  --nav-item-link-hover: var(--color-white);
+}
+
+nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 0;
+  height: 20%;
+}
+
+nav .nav-item:hover .nav-link::before {
+  background-color: var(--color-primary);
+  width: 100%;
 }
