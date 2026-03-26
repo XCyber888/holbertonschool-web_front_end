@@ -1,9 +1,20 @@
+/* Task 1-21 Base Styles (Placeholder) */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --text-color: var(--color-black);
+  --section-title-color: var(--color-black);
+}
+
+/* Task 22: Dark Theme */
 [data-section-theme="dark"] {
   --text-color: var(--color-white);
   --section-title-color: var(--color-white);
   background: var(--color-black);
 }
 
+/* Task 23: Dark Footer & Social Icons */
 .footer-address {
   color: var(--text-color);
 }
